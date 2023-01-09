@@ -1,0 +1,16 @@
+$primary: #f2d357;
+$dark: #1d2c38;
+
+@import "../node_modules/bulma/bulma.sass";
+
+.container {
+    max-width: 800px !important;
+}
+
+.has-padding {
+    padding: .25rem;
+}
+
+.has-margin-bottom {
+    margin-bottom: 1rem;
+}

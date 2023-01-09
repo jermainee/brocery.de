@@ -1,0 +1,24 @@
+{
+  "name": "brocery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch css/style.scss css/style.css --style compressed",
+    "build": "sass css/style.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jermainee/brocery.de.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jermainee/brocery.de/issues"
+  },
+  "homepage": "https://github.com/jermainee/brocery.de#readme",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
