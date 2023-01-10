@@ -15,6 +15,10 @@ $global-spacing: 1rem;
     padding: $global-spacing;
 }
 
+.has-margin-top {
+    margin-top: $global-spacing;
+}
+
 .has-margin-bottom {
     margin-bottom: $global-spacing;
 }
