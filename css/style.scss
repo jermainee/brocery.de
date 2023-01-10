@@ -28,6 +28,7 @@ ul {
 
     li::before {
         content: '✔ ';
+        color: $primary;
     }
 
     li.not {
@@ -35,6 +36,7 @@ ul {
 
         &::before {
             content: '⌧ ';
+            color: $grey-dark;
         }
     }
 }
