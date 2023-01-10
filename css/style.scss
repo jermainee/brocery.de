@@ -7,6 +7,10 @@ $grey-darker: #2E302F;
 
 $global-spacing: 1rem;
 
+.container.is-small {
+    max-width: 900px !important;
+}
+
 .is-rounded {
     border-radius: $radius-large;
 }
