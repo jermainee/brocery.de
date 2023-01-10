@@ -7,6 +7,10 @@ $grey-darker: #2E302F;
 
 $global-spacing: 1rem;
 
+.is-rounded {
+    border-radius: $radius-large;
+}
+
 .has-padding {
     padding: $global-spacing;
 }
