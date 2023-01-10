@@ -1,16 +1,52 @@
-$primary: #f2d357;
-$dark: #1d2c38;
+$primary: #4ECB75;
+$success: $primary;
+$light: #F6F6F6;
+$grey-darker: #2E302F;
 
 @import "../node_modules/bulma/bulma.sass";
 
-.container {
-    max-width: 800px !important;
-}
+$global-spacing: 1rem;
 
 .has-padding {
-    padding: .25rem;
+    padding: $global-spacing;
 }
 
 .has-margin-bottom {
-    margin-bottom: 1rem;
+    margin-bottom: $global-spacing;
+}
+
+.has-margin-bottom-double {
+    margin-bottom: $global-spacing * 2;
+}
+
+.intro {
+    @extend .hero;
+    @extend .is-large;
+    @extend .is-primary;
+
+    &__video {
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+        width:100%;
+        height:100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__body {
+        @extend .hero-body;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
 }
