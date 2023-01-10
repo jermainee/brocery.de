@@ -23,6 +23,22 @@ $global-spacing: 1rem;
     margin-bottom: $global-spacing * 2;
 }
 
+ul {
+    list-style: none;
+
+    li::before {
+        content: '✔ ';
+    }
+
+    li.not {
+        text-decoration: line-through;
+
+        &::before {
+            content: '⌧ ';
+        }
+    }
+}
+
 .intro {
     @extend .hero;
     @extend .is-large;
